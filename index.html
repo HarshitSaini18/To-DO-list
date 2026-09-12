@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <h1><span class="check-circle">✔</span> My Tasks</h1>
+        <p id="date-display">Monday,July 14</p>
+      </div>
+      <div class="task-input" id="task-input">
+        <input
+          class="new-task"
+          id="new-task"
+          type="text"
+          placeholder="What do you need to do?"
+        />
+        <button class="add-btn" id="add-btn">+</button>
+      </div>
+      <div class="navigation-btn" id="navigation-btn">
+        <p>
+          <span id="all-btn">All</span>
+          <span id="active-btn">Active</span>
+          <span id="completed-btn">Completed</span>
+        </p>
+      </div>
+      <div class="screen" id="start-screen">
+        <img
+          src="img/clipboard_image.webp"
+          alt="empty list"
+          loading="lazy"
+          class="emptyListImg"
+          height="70px"
+          width="60px"
+        />
+        <p>No tasks here yet</p>
+      </div>
+      <div class="task-container">
+        <div class="screen active" id="all-screen">
+          <ul id="task-all">
+            <li>
+              <div class="checkbox-container">
+                <input type="checkbox" class="checkbox" />
+                <span>task 1</span>
+              </div>
+              <button class="delete-btn">&times;</button>
+            </li>
+          </ul>
+        </div>
+        <div class="screen" id="active-screen">
+          <ul id="task-act">
+            <li>
+              <div class="checkbox-container">
+                <input type="checkbox" class="checkbox" />
+                <span>task 1</span>
+              </div>
+              <button class="delete-btn">&times;</button>
+            </li>
+          </ul>
+        </div>
+        <div class="screen" id="completed-screen">
+          <ul id="task-comp">
+            <li>
+              <div class="checkbox-container">
+                <input type="checkbox" class="checkbox" />
+                <span>task 1</span>
+              </div>
+              <button class="delete-btn">&times;</button>
+            </li>
+          </ul>
+        </div>
+        <div class="task-info" id="task-info">
+          <div class="task-left">
+            <span id="task-left">0</span>
+            items left
+          </div>
+          <span id="clear" class="clear">Clear completed</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
